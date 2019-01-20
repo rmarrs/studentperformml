@@ -1,0 +1,32 @@
+{
+  "name": "studentperformml",
+  "version": "1.0.0",
+  "description": "Student Performance Machine Language with TensorFlowJS. Used to predict student GPA at earlier levels by feeding district-wide results of previously graduated students.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmarrs/studentperformml.git"
+  },
+  "keywords": [
+    "machine",
+    "learning",
+    "ml",
+    "students",
+    "performance",
+    "gpa",
+    "predictive",
+    "analysis"
+  ],
+  "author": "Ryan Marrs (ryan.marrs@detroitk12.org), Michael Kowalski (coming soon)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rmarrs/studentperformml/issues"
+  },
+  "homepage": "https://github.com/rmarrs/studentperformml#readme",
+  "dependencies": {
+    "@tensorflow/tfjs": "^0.14.2"
+  }
+}

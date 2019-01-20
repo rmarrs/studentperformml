@@ -1,0 +1,63 @@
+{
+    "students" : {
+        "student" : {
+            "id" : "guid", 
+            "ethnicity" : "string", 
+            "zipcode" : "string",
+            "street_name" : "string",
+            "age" : "integer",
+            "grade" : "integer",
+            "family" : {
+                "person" : {
+                    "relationship" : ["father", "mother", "brother", "sister", "cousin", "aunt", "uncle", "grandfather", "grandmother", "other"], 
+                    "lives_with" : "boolean",
+                    "student_guid" : "guid" 
+                }
+            },
+            "classes" : { 
+                "class" : {
+                    "class_guid" : "guid",              
+                    "score" : "string",
+                    "credits_earned" : "integer",
+                    "entry_date" : "smalldatetime",
+                    "exit_date" : "smalldatetime",
+                    "completed" : "boolean",
+                    "days_enrolled" : "integer" ,
+                    "days_attended" :  "integer",
+                    "days_possible" : "integer",
+                    "school_id" : "integer",
+                    "year" : "integer"
+                }
+            }
+        }
+    },
+    "classes" : { 
+        "class" : {
+            "id" : "guid",
+            "class_type" : "string",
+            "track" : "string",
+            "grade" : "integer",
+            "period" : "integer",  
+            "average_student_score" : "float",
+            "students_teacher_ratio" : "float",
+            "credits_possible" : "integer",
+            "teacher" : {
+                "absences" : "integer",
+                "ranking" : "integer"
+            },
+            "school_guid" : "guid"
+        }
+    },
+
+    "schools" : {
+        "school" : {
+            "id" : "guid",
+            "name" : "string",
+            "address" : "string",
+            "city" : "string",
+            "state" : "string",
+            "zipcode" : "string"
+        }
+    }
+
+}
